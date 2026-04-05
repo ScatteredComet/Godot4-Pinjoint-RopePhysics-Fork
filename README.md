@@ -1,3 +1,12 @@
+# NOTICE
+This is a fork of [Elij4hMartin's repo](https://github.com/Elij4hMartin/Godot4-PinJoint-RopePhysics), with:
+- binary files removed
+- png's moved to git lfs
+- bumped to Godot v4.6
+- folder structure more easily usable within other projects
+
+I do not own and did not create any of the code, algorithms or logic. The original code is under [MIT license](/LICENSE).
+
 # Godot4 PinJoint RopePhysics
 An implementation of rope physics using Path3D nodes to procedurally generate geometry, and PinJoint3D nodes to approximate rope physics.
 - Play the demo here on itch.io: https://palin-drome.itch.io/godot-4-3d-pinjoint-rope-physics
