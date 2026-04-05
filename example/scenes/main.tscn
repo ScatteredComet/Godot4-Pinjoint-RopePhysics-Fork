@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://cvj4gvvg4og03"]
 
 [ext_resource type="PackedScene" uid="uid://cssglj6choju3" path="res://example/scenes/player.tscn" id="2_nc7vw"]
-[ext_resource type="Material" uid="uid://b3uxs3oppo8yg" path="res://addons/pinjoint-ropephysics/materials/dark_grid.tres" id="2_sbd5r"]
+[ext_resource type="Material" uid="uid://b3uxs3oppo8yg" path="res://addons/pinjoint-ropephysics/materials/dark/dark_grid.tres" id="2_sbd5r"]
 [ext_resource type="PackedScene" uid="uid://dwd6ekhtmle0x" path="res://example/scenes/rigid_body_3d.tscn" id="3_3l15g"]
-[ext_resource type="Material" uid="uid://d3du70wkvp1eo" path="res://addons/pinjoint-ropephysics/materials/dark_grid2.tres" id="3_752eu"]
+[ext_resource type="Material" uid="uid://d3du70wkvp1eo" path="res://addons/pinjoint-ropephysics/materials/dark/dark_grid2.tres" id="3_752eu"]
 [ext_resource type="PackedScene" uid="uid://x4xnc85khpl5" path="res://addons/pinjoint-ropephysics/path_3d_rope.tscn" id="3_sm413"]
-[ext_resource type="Material" uid="uid://esbif4ec2kcc" path="res://addons/pinjoint-ropephysics/materials/green_rope.tres" id="4_hineg"]
-[ext_resource type="Material" uid="uid://de64w7g55hbby" path="res://addons/pinjoint-ropephysics/materials/purple_rope.tres" id="4_jeaob"]
-[ext_resource type="Material" uid="uid://c0vdiomofi8ro" path="res://addons/pinjoint-ropephysics/materials/red_rope.tres" id="5_ct4ni"]
+[ext_resource type="Material" uid="uid://esbif4ec2kcc" path="res://addons/pinjoint-ropephysics/materials/green/green_rope.tres" id="4_hineg"]
+[ext_resource type="Material" uid="uid://de64w7g55hbby" path="res://addons/pinjoint-ropephysics/materials/purple/purple_rope.tres" id="4_jeaob"]
+[ext_resource type="Material" uid="uid://c0vdiomofi8ro" path="res://addons/pinjoint-ropephysics/materials/red/red_rope.tres" id="5_ct4ni"]
 [ext_resource type="Script" uid="uid://b2qhqsb3w2b4" path="res://example/scripts/pause_screen.gd" id="8_hmp7c"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_aikxy"]
@@ -60,7 +60,7 @@ height = 10.0
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_i70t2"]
 height = 10.0
 
-[sub_resource type="Curve3D" id="Curve3D_cbpkp"]
+[sub_resource type="Curve3D" id="Curve3D_3l15g"]
 resource_local_to_scene = true
 bake_interval = 512.0
 _data = {
@@ -68,15 +68,6 @@ _data = {
 "tilts": PackedFloat32Array(0, 0, 0)
 }
 point_count = 3
-
-[sub_resource type="Curve3D" id="Curve3D_3l15g"]
-resource_local_to_scene = true
-bake_interval = 512.0
-_data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0),
-"tilts": PackedFloat32Array(0, 0)
-}
-point_count = 2
 
 [sub_resource type="Curve3D" id="Curve3D_c3eh6"]
 resource_local_to_scene = true
@@ -91,6 +82,15 @@ point_count = 2
 resource_local_to_scene = true
 bake_interval = 512.0
 _data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_v8v7g"]
+resource_local_to_scene = true
+bake_interval = 512.0
+_data = {
 "points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0.0165803, -0.174546, 0.670575, 0, 0, 0, 0, 0, 0, 0.696114, -1.69264, -0.0116196, 0, 0, 0, 0, 0, 0, 0.0127234, -3.24722, -0.637166, 0, 0, 0, 0, 0, 0, -0.654476, -4.31651, 0.0145416, 0, 0, 0, 0, 0, 0, -0.0158024, -5.52111, 0.649899, 0, 0, 0, 0, 0, 0, 0.618355, -6.60704, 0.127532, 0, 0, 0, 0, 0, 0, -0.000497341, -8.01768, -0.689014, 0, 0, 0, 0, 0, 0, -0.700634, -8.9485, -0.114236, 0, 0, 0, 0, 0, 0, -0.0518765, -9.81321, 0.746325, 0, 0, 0, 0, 0, 0, 0.785056, -9.86693, -0.00333929, 0, 0, 0, 0, 0, 0, 0.240869, -9.90934, -0.887117),
 "tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 }
@@ -100,7 +100,7 @@ point_count = 11
 
 [sub_resource type="SphereMesh" id="SphereMesh_341ri"]
 
-[sub_resource type="Curve3D" id="Curve3D_v8v7g"]
+[sub_resource type="Curve3D" id="Curve3D_a1tb1"]
 resource_local_to_scene = true
 bake_interval = 512.0
 _data = {
@@ -109,7 +109,7 @@ _data = {
 }
 point_count = 2
 
-[sub_resource type="Curve3D" id="Curve3D_a1tb1"]
+[sub_resource type="Curve3D" id="Curve3D_ccksh"]
 resource_local_to_scene = true
 bake_interval = 512.0
 _data = {
@@ -320,23 +320,23 @@ shape = SubResource("CylinderShape3D_i70t2")
 
 [node name="Path3DRope" parent="." unique_id=1856501754 instance=ExtResource("3_sm413")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 3, -5)
-curve = SubResource("Curve3D_cbpkp")
+curve = SubResource("Curve3D_3l15g")
 number_of_segments = 8
 fixed_end_point = true
 
 [node name="Path3DRope2" parent="." unique_id=360342171 instance=ExtResource("3_sm413")]
 transform = Transform3D(0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 0, 0, 1, -2, 10, -2)
-curve = SubResource("Curve3D_3l15g")
+curve = SubResource("Curve3D_c3eh6")
 material = ExtResource("4_jeaob")
 
 [node name="Path3DRope4" parent="." unique_id=1111282973 instance=ExtResource("3_sm413")]
 transform = Transform3D(0.683013, 0.183013, 0.707107, -0.258819, 0.965926, 0, -0.683013, -0.183013, 0.707107, -2, 10, -2.4)
-curve = SubResource("Curve3D_c3eh6")
+curve = SubResource("Curve3D_s78at")
 material = ExtResource("4_hineg")
 
 [node name="Path3DRope3" parent="." unique_id=1037934066 instance=ExtResource("3_sm413")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4, 10, -5)
-curve = SubResource("Curve3D_s78at")
+curve = SubResource("Curve3D_v8v7g")
 number_of_segments = 25
 material = ExtResource("5_ct4ni")
 
@@ -365,7 +365,7 @@ mesh = SubResource("SphereMesh_341ri")
 
 [node name="Path3DRope_Lose" parent="." unique_id=1140310896 node_paths=PackedStringArray("rigidbody_attached_to_start", "rigidbody_attached_to_end") instance=ExtResource("3_sm413")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 2, -5)
-curve = SubResource("Curve3D_v8v7g")
+curve = SubResource("Curve3D_a1tb1")
 number_of_segments = 5
 cable_thickness = 0.2
 fixed_start_point = false
@@ -375,7 +375,7 @@ material = ExtResource("4_hineg")
 
 [node name="Path3DRope5" parent="." unique_id=2021412358 node_paths=PackedStringArray("rigidbody_attached_to_end") instance=ExtResource("3_sm413")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 8, -5)
-curve = SubResource("Curve3D_a1tb1")
+curve = SubResource("Curve3D_ccksh")
 number_of_segments = 5
 cable_thickness = 0.15
 rigidbody_attached_to_end = NodePath("../RedBall")
